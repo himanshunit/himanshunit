@@ -19,10 +19,13 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="res/css/bootstrap.icon-large.min.css" />
   <link rel="stylesheet" type="text/css" href="res/css/syntax.css" />
-
+  <link href="tracker.css" rel="stylesheet" media="screen">
+  			<header id="header">
+	  			<canvas id="header-canvas"></canvas>
+	  		</header>
 </head>
 <body>
-  <div id="wrap">
+  <div id="wrap" >
     <nav class="navbar navbar-default">
       <div class="container">
         <div id="navbar">
@@ -72,5 +75,15 @@
  <script src="static/js/main.js"></script>
  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
  <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+ <script src='jquery.js'></script>
+ <script src="tracker.js"></script>
+ <script type="text/javascript">
+	$("#show-animation").change(function () {
+		if ( $(this).is(":checked") ) {
+			$("#header-canvas").show();
+		} else {
+			$("#header-canvas").hide();
+		}
+</script>
 </body>
 </html>
